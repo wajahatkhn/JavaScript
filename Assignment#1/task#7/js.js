@@ -1,0 +1,12 @@
+document.write("<h1>" + "Rule for naming JS variables" + "</h1>");
+document.write("Variable names can only contain " + "Letters, " + "Numbers, " + "DollarSigns, " + "and " + "Underscores.");
+document.write("<br>");
+document.write("For example " + "$my_1stVariable.");
+document.write("<br>");
+document.write("Variables must begin with a " + "DollarSign, " + "UnderScore, " + "or " + "Letter.");
+document.write("<br>");
+document.write("For example $name, _name or name.");
+document.write("<br>");
+document.write("Variable names are " + "case sentitive.");
+document.write("<br>");
+document.write("Variable names should not be JS " + "Keywords.");

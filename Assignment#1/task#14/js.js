@@ -1,0 +1,22 @@
+var y = 2, z = 1;
+document.write('<span style="font-size: 25px">' +"y is " + y);
+document.write("<br>");
+document.write("<br>");
+document.write("z is " + z);
+document.write("<br>");
+document.write("<br>");
+var result = --y - --z + ++z + z--;
+document.write("--y - --z + ++z + z-- = " + result);
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
+document.write("Stage by stage explanation:");
+document.write("<br>");
+document.write("<br>");
+document.write("--y adds 1 to y before inputting the value of y to the equation, which makes y = 1.");
+document.write("<br>");
+document.write("--y - --z does the same pre-decrement operation, so --y(1) - --z(0) = 1.")
+document.write("<br>");
+document.write("--y - --z + ++z + z-- has both pre-decrement and pre-increment operations going on, so --y(1) - --z(0) + ++z(1) = 2.");
+document.write("<br>");
+document.write("--y - --z + ++z + z-- has the post-decrement operation(z--) too, so --y(1) - --z(0) + ++z(1) + z--(1), hence the result is 3.");

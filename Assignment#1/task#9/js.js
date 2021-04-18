@@ -1,0 +1,10 @@
+var a = 3 + 5;
+document.write("<h1>" + "3 + 5 = " + a + "</h1>");
+var b = 3 - 5;
+document.write("<h1>" + "3 - 5 = " + b + "</h1>");
+var c = 3 * 5;
+document.write("<h1>" + "3 * 5 = " + c + "</h1>");
+var d = 3 / 5;
+document.write("<h1>" + "3 / 5 = " + d + "</h1>");
+var e = 3 % 5;
+document.write("<h1>" + "3 % 5 = " + e + "</h1>");
