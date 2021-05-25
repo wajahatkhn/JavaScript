@@ -515,3 +515,133 @@
 //     alert("Please enter the time in the correct format.");
 // }
 
+// var qualifs = [];
+// qualifs.push("SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M.Phil.", "PhD");
+// document.write("<h1>" +  "Qualifications:" + "</h1>");
+// document.write("<br>");
+// for(var i = 0; i < qualifs.length; i++) {
+//     document.write(i + 1 + ") " + qualifs[i] + "<br>");
+// }
+
+// var studNames = ["Ali", "Kashif", "Umar"];
+// var studScores = [333, 444, 222];
+// var totalMks = 500;
+// for(i = 0; i < studNames.length; i++) {
+//     var percentage = (studScores[i] / totalMks * 100) + "%";
+//     document.write("Score of " + studNames[i] + " is " + studScores[i] + ". Percentage: " + percentage + "<br>"); 
+// }
+
+// var colors = ["Red", "Green", "Blue", "Orange", "Purple", "Grey"];
+// document.write("<b> Initial array: </b>" + colors + "<br>");
+// var userC1 = prompt("What color would you like to add at the beginning of the array?");
+// colors.unshift(userC1);
+// document.write("<b> A. </b>" + colors + "<br>");
+// var userC2 = prompt("What color would you like to add at the end of the array?");
+// colors.push(userC2);
+// document.write("<b> B. </b>" + colors + "<br>");
+// colors.unshift("Maroon", "Cyan");
+// document.write("<b> C. </b>" + colors + "<br>");
+// colors.shift();
+// document.write("<b> D. </b>" + colors + "<br>");
+// colors.pop();
+// document.write("<b> E. </b>" + colors + "<br>");
+// var indx = prompt("At which index of the array, would you like to add a color?");
+// indx = parseInt(indx);
+// var userC3 = prompt("And what color would you like to add to the selected index?");
+// colors.splice(indx, 0, userC3);
+// document.write("<b> F. </b>" + colors + "<br>");
+// var indx2 = prompt("At which index of the array would you like to delete color(s)?");
+// var dltNumb = prompt("And how many colors would you like to delete from the selected index?");
+// colors.splice(indx2, dltNumb);
+// document.write("<b> G. </b>" + colors + "<br>");
+
+// var cities = ["Karachi", "Islamabad", "Lahore", "Peshawar", "Quetta", "Multan"];
+// var sCities = cities.slice(3, 6);
+// document.write("<b>Cities list: </b>" + "<br>");
+// document.write(cities);
+// document.write("<br>");
+// document.write("<br>");
+// document.write("<b>Selected cities list: </b>" + "<br>");
+// document.write(sCities);
+
+// var arr0 = [7, "x", 2, "x", "y", 7, 7, "z", "y", 2,];
+// document.write("<b>Initial Array: </b>" + arr0) + "<br>";
+// var mySet = new Set(arr0);
+// arr0 = [...mySet];
+// document.write("<br> <b>After removing duplicates: </b>" + arr0);
+
+// var aCities = ["Karachi", "Lahore", "Islamabad", "Faisalabad"];
+// var o = ["th","st","nd","rd"];
+// document.write("1" + o[1] + " choice is " + aCities[0] + ".<br>");
+// document.write("2" + o[2] + " choice is " + aCities[1] + ".<br>");
+// document.write("3" + o[3] + " choice is " + aCities[2] + ".<br>");
+
+// var x = [10,20,4,40,60,70];
+// var y = [1,2,3,4,5,6,7,8,9,10];
+// var z = [...new Set([...y, ...x])];
+// document.write("<b>Output: </b>" + z)
+
+// var count = [];
+// var rCount = [];
+// var even = [];
+// var odd = [];
+// var series = [];
+// for(i = 1; i <= 15; i++) {
+//     count.push(i);
+// }
+// for(i = 15; i >= 1; i--) {
+//     rCount.push(i);
+// }
+// for(i = 0; i <= 20; i++) {
+//     if((i % 2 === 0)) {
+//         even.push(i);
+//     }
+// }
+// for(i = 0; i <= 20; i++) {
+//     if((i % 2 != 0)) {
+//         odd.push(i);
+//     }
+// }
+// for(i = 1; i <= 20; i++) {
+//     if((i % 2 === 0)) {
+//         series.push(i + "k");
+//     }
+// }
+// document.write("a. Counting: " + count + "<br>")
+// document.write("b. Reverse counting: " + rCount + "<br>")
+// document.write("c. Even: " + even + "<br>")
+// document.write("d. Odd: " + odd + "<br>")
+// document.write("e. Series: " + series + "<br>")
+
+
+// var arr = [24, 53, 78, 91, 12];
+// var largest= 0;
+// for ( var i = 0; i <= largest; i++){
+//     if (arr[i] > largest) {
+//         largest = arr[i];
+//     }
+// }
+// document.write("<b>Array Items: </b>" + arr + "<br>");
+// document.write("The largest number is " + largest);
+
+
+// var numArray = [20,53,78,4,91,12];
+// var A = [20,53,78,4,91,12];
+// var sortedNumArr = numArray.sort(function(a, b) {
+//   return a - b;
+// });
+// document.write("<b>A: </b>" + "[" + A + "]" + "<br>");
+// document.write("<b>Sorted Form: </b>" + "[" + sortedNumArr + "]");
+
+// var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+// var order = prompt("Welcome to BoomBoom Bakery. What would you like to order?");
+// var found = false;
+// for(var i = 0; i < A.length; i++) {
+//     if(A[i] === order) {
+//         alert(order + " is available at index " + i + " in our bakery.");
+//         found = true;
+//     }
+// }
+// if(found === false) {
+//     alert("We are sorry, " + order + " is not available in our bakery.");
+// }
