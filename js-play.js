@@ -645,3 +645,192 @@
 // if(found === false) {
 //     alert("We are sorry, " + order + " is not available in our bakery.");
 // }
+
+// var s = 10;
+// var i = -1000;
+// var f = 230.47;
+// var d = 200.374;
+// var sin45 = Math.sin((45 * 3.14159) / 180);
+// var cos45 = Math.cos((45 * 3.14159) / 180);
+// var tan45 = Math.tan((45 * 3.14159) / 180);
+// var log = Math.log(s);
+// var pow = Math.pow(d, 2);
+// var hypot = Math.hypot(s, s);
+// var sqrt = Math.sqrt(f);
+// var abs = Math.abs(i);
+// var floor = Math.floor(d);
+// var ceil = Math.ceil(d);
+// document.write("<h1>" + "Math Operations in JavaScript" + "</h1>");
+// document.write("<br>");
+// document.write("<pre>" + "<a style=color:blue;>" + "short  s    : " + "</a>" + "<a style=color:red;>"  + s + "</a>");
+// document.write("<br>");
+// document.write("<a style=color:blue;>" + "int    i    : " + "</a>"  + "<a style=color:red;>" + i + "</a>");
+// document.write("<br>");
+// document.write("<a style=color:blue;>" + "float  f    : " + "</a>"  + "<a style=color:red;>" + f + "</a>");
+// document.write("<br>");
+// document.write("<a style=color:blue;>" + "double d    : " + "</a>"  + "<a style=color:red;>" + d + "</a>");
+// document.write("<br>");
+// document.write("<br>");
+// document.write("<a style=color:blue;>" + "sin   (45)  : " + "</a>"  + "<a style=color:red;>" + sin45 + "<br>" + "</a>");
+// document.write("<a style=color:blue;>" + "cos   (45)  : " + "</a>"  + "<a style=color:red;>" + cos45 + "<br>" + "</a>");
+// document.write("<a style=color:blue;>" + "tan   (45)  : " + "</a>"  + "<a style=color:red;>" + tan45 + "<br>" + "</a>");
+// document.write("<a style=color:blue;>" + "log   (s)   : " + "</a>"  + "<a style=color:red;>" + log + "<br>" + "</a>");
+// document.write("<a style=color:blue;>" + "pow   (d,2) : " + "</a>"  + "<a style=color:red;>" + pow + "<br>" + "</a>");
+// document.write("<a style=color:blue;>" + "hypot (s,s) : " + "</a>"  + "<a style=color:red;>" + hypot + "<br>" + "</a>");
+// document.write("<a style=color:blue;>" + "sqrt  (f)   : " + "</a>"  + "<a style=color:red;>" + sqrt + "<br>" + "</a>");
+// document.write("<a style=color:blue;>" + "abs   (i)   : " + "</a>"  + "<a style=color:red;>" + abs + "<br>" + "</a>");
+// document.write("<a style=color:blue;>" + "floor (d)   : " + "</a>"  + "<a style=color:red;>" + floor + "<br>" + "</a>");
+// document.write("<a style=color:blue;>" + "ceil  (d)   : " + "</a>"  + "<a style=color:red;>" + ceil + "<br>" + "</a>" +"</pre>");
+
+// var date = new Date();
+// alert(date);
+
+// var city = "Hyderabad";
+// document.write("<p style='font-size:25px;'>" + "City: " + city);
+// document.write("<br>");
+// var city2 = city.replace("Hyder", "Islam");
+// document.write("After Replacement: " + city2);
+
+// var strng = "666";
+// document.write("<p style='font-size:25px;'>" + "Value: " + strng);
+// document.write("<br>");
+// document.write("Type: " + typeof strng);
+// document.write("<br>");
+// var numb = 666;
+// document.write("Value: " + numb);
+// document.write("<br>");
+// document.write("Type: " + typeof numb);
+
+// const pattern = /^[0-9a-zA-Z]+$/;
+// const patternTwo = /^[0-9]+$/;
+
+// let userInput;
+
+// do {
+//   userInput = prompt("Please Enter valid password");
+// } while (!pattern.test(userInput) || userInput.length < 8 || patternTwo.test(userInput[0]));
+
+// alert('Correct password');
+
+// var email = prompt("Enter your email!");
+// var exp = /^[a-z][a-zA-Z0-9_.]*(\.[a-zA-Z][a-zA-Z0-9_.]*)?@[a-z][a-zA-Z-0-9]*\.[a-z]+(\.[a-z]+)?$/;
+// if(exp.test(email) === true ) {
+// alert("Email is valid!");
+// }
+// else {
+//     alert("Email is invalid!");
+// }
+
+// var intgr = prompt("Enter a integer!");
+// var int = Number(intgr);
+// document.write("<p style='font-size:25px;'>" + "number: " + int + "<br>");
+// var round = Math.round(int);
+// document.write("round-off value: " + round + "<br>");
+// var floor = Math.floor(int);
+// document.write("floor value: " + floor + "<br>");
+// var ceil = Math.ceil(int);
+// document.write("ceil value: " + ceil + "<br>");
+
+// var rndm = Math.random();
+// var num1 = rndm * 6;
+// var num2 = num1 + 1;
+// var numb = Math.floor(num2);
+// document.write("<p style='font-size:25px;'>" + "Dice: " + numb);
+
+// var strng = "The quick brown fox jumps over the lazy dog.";
+// var strng1 = strng.toLowerCase();
+// var count = (strng1.match(/the/g) || []).length;
+// document.write("<p style='font-size:25px;'>" + "Text: " + strng + "<br>");
+// document.write("There are " + count + " occurrence(s) of the word 'the'.");
+
+// var num = prompt("Enter a number value!");
+// var a = ['','one ','two ','three ','four ', 'five ','six ','seven ','eight ','nine ','ten ','eleven ','twelve ','thirteen ','fourteen ','fifteen ','sixteen ','seventeen ','eighteen ','nineteen '];
+// var b = ['', '', 'twenty','thirty','forty','fifty', 'sixty','seventy','eighty','ninety'];
+
+// function inWords (num) {
+//     if ((num = num.toString()).length > 9) return 'overflow';
+//     n = ('000000000' + num).substr(-9).match(/^(\d{2})(\d{2})(\d{2})(\d{1})(\d{2})$/);
+//     if (!n) return; var str = '';
+//     str += (n[1] != 0) ? (a[Number(n[1])] || b[n[1][0]] + ' ' + a[n[1][1]]) + 'crore ' : '';
+//     str += (n[2] != 0) ? (a[Number(n[2])] || b[n[2][0]] + ' ' + a[n[2][1]]) + 'lakh ' : '';
+//     str += (n[3] != 0) ? (a[Number(n[3])] || b[n[3][0]] + ' ' + a[n[3][1]]) + 'thousand ' : '';
+//     str += (n[4] != 0) ? (a[Number(n[4])] || b[n[4][0]] + ' ' + a[n[4][1]]) + 'hundred ' : '';
+//     str += (n[5] != 0) ? ((str != '') ? 'and ' : '') + (a[Number(n[5])] || b[n[5][0]]): '';
+//     return str;
+// }
+// document.write("<p style='font-size:25px;'>" + "Number: " + "<br>");
+// document.write(num + "<br>");
+// document.write("Word: " + "<br>");
+// document.write(inWords(num) + "<br>");
+
+// var html = "<a><strong><em>Only print this</em></strong></p>";
+// document.write("<p style='font-size:25px;'>" + "Given String:" + "<br>");
+// document.write(html + "<br>");
+// document.write("<a style='font-size:25px;'>" + "Output:" + "<br>");
+// function stripHtml()
+// {
+//    let tmp = document.createElement("DIV");
+//    tmp.innerHTML = html;
+//    return tmp.textContent || tmp.innerText || "";
+// }
+// document.write("<a style='font-size:25px;'>" + stripHtml(html));
+
+// document.write("<pre><a style='font-size:25px;'><i>Input:              Output:</i><br>");
+// var num1 = 16.765;
+// var num2 = 12.37982;
+// var num3 = -9.3079499;
+// var rNum1 = num1.toFixed(2);
+// var rNum2 = num2.toFixed(2);
+// var rNum3 = num3.toFixed(4);
+// document.write(num1 + ", 2      →    " + rNum1 + "<br>");
+// document.write(num2 + ", 2    →    " + rNum2 +"<br>");
+// document.write(num3 + ", 4  →   " + rNum3 + "<br>");
+
+// var nums = new Array();
+//     var N = prompt("How many numbers would you like to enter? ");
+//     N = parseInt(N);
+//     var i = 0, s = 0;
+//     for(i = 0; i <= N - 1; i++)
+//     {
+//         nums[i] = parseInt(prompt("Enter your numbers: "));
+//         s += nums[i];
+//         document.write("Number you chose: " + nums[i] + "<br />");
+//     }
+//     var ave = s / N;
+//     document.write("Average: " + ave + "<br />");
+
+// var date = new Date();
+// alert(date);
+// var day = date.getDate();
+// if(day <= 15)
+// {
+//    document.write("<p style='font-size:25px;'>" + "First fifteen days of the month." + "<br>");
+// }
+// else
+// {
+//    document.write("<p style='font-size:25px;'>" + "Last fifteen days of the month." + "<br>");
+// }
+
+// var todayDate = new Date();
+// var Todaymilli = todayDate.getTime();
+// var todayMin = todayDate.getMinutes();
+// var diff = Todaymilli - todayMin;
+// var diffMin = diff/(1000*60*60);
+ 
+// document.write("<p style='font-size:25px;'>Current Date: " + todayDate);
+// document.write("<br> Elapsed milliseconds since midnight, Jan 1, 1970: " + Todaymilli);
+// document.write("<br> Elapsed minutes since midnight, Jan 1, 1970: " + diffMin)
+
+// var pastDate = new Date();
+// var realDate = new Date();
+// var hour = pastDate.getHours();
+// var hPast = hour - 1;
+// var pDate = pastDate.setHours(hPast);
+// document.write("<p style='font-size:25px;'>Current Date: " + realDate);
+// document.write("<br><p style='font-size:25px;'>Current Date: " + pastDate);
+
+// var age = prompt("What is your age?");
+// var date = new Date();
+// var birthYear = date.getFullYear() - age;
+// document.write("<p style='font-size:25px;'>Your age is " + age);
+// document.write("<br><p style='font-size:25px;'>Your birth year is " + birthYear);

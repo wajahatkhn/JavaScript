@@ -1,0 +1,10 @@
+document.write("<pre><a style='font-size:25px;'><i>Input:              Output:</i><br>");
+var num1 = 16.765;
+var num2 = 12.37982;
+var num3 = -9.3079499;
+var rNum1 = num1.toFixed(2);
+var rNum2 = num2.toFixed(2);
+var rNum3 = num3.toFixed(4);
+document.write(num1 + ", 2      →    " + rNum1 + "<br>");
+document.write(num2 + ", 2    →    " + rNum2 +"<br>");
+document.write(num3 + ", 4  →   " + rNum3 + "<br>");
