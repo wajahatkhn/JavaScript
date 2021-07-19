@@ -834,3 +834,469 @@
 // var birthYear = date.getFullYear() - age;
 // document.write("<p style='font-size:25px;'>Your age is " + age);
 // document.write("<br><p style='font-size:25px;'>Your birth year is " + birthYear);
+
+// function cuteAlert(){
+//     alert("Please Kill Yourself...");
+// }
+// cuteAlert();
+
+// function multiply(num1, num2)
+// {
+//     var num3 = num1 * num2;
+//     alert("Result: " + num3);
+// }
+// multiply(50, 2);
+
+// function showmsg(name)
+// {
+//     alert("Hello " + name);
+// }
+// showmsg("Wajhi");
+
+// function calcScore(sub1, sub2, sub3, sub4)
+// {
+//     return (sub1 + sub2 + sub3 + sub4) / 4;
+// }
+// function grade(score)
+// {
+//     if(score > 80 && score <= 100)
+//     {
+//         alert("Grade: A");
+//     }
+//     else if(score > 60 && score <= 80)
+//     {
+//         alert("Grade: B");
+//     }
+//     else if(score > 50 && score <= 60)
+//     {
+//         alert("Grade: C");
+//     }
+//     else if(score > 40 && score <= 50)
+//     {
+//         alert("Grade: D");
+//     }
+//     else
+//     {
+//         alert("Failed");
+//     }
+// }
+// score = calcScore(52, 89, 58, 74);
+// alert(score);
+// grade(score);
+
+// function multiply(num1, num2) 
+// {
+//     return num1 * num2;
+// }
+// function sum(a, b)
+// {
+//     return multiply(a, b) + 10;
+// }
+// var total = sum(5, 5) + 10;
+// alert(total);
+
+// function multiply(num1, num2)
+// {
+//     return num1 * num2;
+// }
+// function sum(a, b)
+// {
+//     return a + b;
+// }
+// var total = sum(multiply(5, 5), 5) + 5;
+// alert(total);
+
+// var num = prompt("Enter a number!");
+// var square = function(num) {return num * num;};
+// var cube = function(num) {return num * num * num;};
+// var a = square(num);
+// var b = cube(num);
+// alert("Square: " + a);
+// alert("Cube: " + b);
+
+// var num = prompt("Enter a number!");
+// n = parseInt(num);
+// function factorial(n)
+// {
+//     if(n <= 1)
+//     {
+//         return 1;
+//     }
+//     else
+//     {
+//         return n * factorial(n - 1);
+//     }
+// }
+// alert("It's factorial is: " + factorial(n));
+
+// var dayNum = 3;
+// switch(dayNum)
+// {
+//     case 6:
+//         alert("Today is Saturday!");
+//         break;
+//     case 0:
+//         alert("Today is Sunday!");
+//         break;
+//     default:
+//         alert("Looking forward to the weekend!");
+// }
+
+// var i = 0;
+// while(i < 26)
+// {
+//     document.write("<a style=color:blue;>" + "I = " + "</a>"  + "<a style=color:red;>" + i + "</a>" + "<br>");
+//     i++;
+// }
+
+// var num1 = prompt("Enter the 1st number!");
+// var num2 = prompt("Enter the 2nd number!");
+// var num3 = prompt("Enter the 3rd number!");
+// var n1 = parseInt(num1);
+// var n2 = parseInt(num2);
+// var n3 = parseInt(num3);
+// function factorial(n)
+// {
+//     if(n <= 1)
+//     {
+//         return 1;
+//     }
+//     else
+//     {
+//         return n * factorial(n -1);
+//     }
+// }
+// document.write("<a style=color:blue;font-size:25px;>" + "factorial("+ n1 + ") " + "</a>" + "→" + "<a style=color:red;font-size:25px;>" + factorial(n1) + "</a>" + "<br>");
+// document.write("<a style=color:blue;font-size:25px;>" + "factorial("+ n2 + ") " + "</a>" + "→" + "<a style=color:red;font-size:25px;>" + factorial(n2) + "</a>" + "<br>");
+// document.write("<a style=color:blue;font-size:25px;>" + "factorial("+ n3 + ") " + "</a>" + "→" + "<a style=color:red;font-size:25px;>" + factorial(n3) + "</a>" + "<br>");
+
+// var w = prompt("Enter the width of the rectangle!");
+// var h = prompt("Enter the height of the rectangle!");
+// var w1 = parseInt(w);
+// var h1 = parseInt(h);
+// function areaR(n1, n2)
+// {
+//     return n1 * n2;
+// }
+// document.write("<a style=color:blue;font-size:25px;>" + "Area of rectangle is " + "<a style=color:red;font-size:25px;>" + areaR(w1, h1) + "</a>" + "<br>");
+
+// var str = prompt("Write a palindrome!");
+// function palindrome(str) {
+
+//     var len = str.length;
+//     var mid = Math.floor(len/2);
+
+//     for ( var i = 0; i < mid; i++ ) {
+//         if (str[i] !== str[len - 1 - i]) {
+//             return false;
+//         }
+//     }
+
+//     return true;
+// }
+// if (palindrome(str) === false)
+// {
+//     document.write("<a style=color:blue;font-size:25px;>" + "Palindrome: " + "<a style=color:red;font-size:25px;>" + palindrome(str) + "</a>" + "<br>");
+// }
+// else
+// {
+//     document.write("<a style=color:blue;font-size:25px;>" + "Palindrome: " + "<a style=color:red;font-size:25px;>" + palindrome(str) + "</a>" + "<br>");
+// }
+
+// The Geometrizer
+// var radius = prompt("Enter the radius of a circle!");
+// var r = parseInt(radius);
+// function calcCircumference(r)
+// {
+//     c = 2 * (3.14) * r;
+//     document.write("<a style=color:blue;font-size:25px;>" + "The circumference is " + "<a style=color:red;font-size:25px;>" + c + "</a>" + "<br>");
+// }
+// function calcArea(r)
+// {
+//     a = (3.14) * (r * r);
+//     document.write("<a style=color:blue;font-size:25px;>" + "The area is " + "<a style=color:red;font-size:25px;>" + a + "</a>" + "<br>");
+// }
+// calcCircumference(r);
+// calcArea(r);
+
+// var amount = prompt("Enter the amount you want to withdraw!");
+// amount = parseInt(amount);
+// function denom100(n)
+// {
+//     return Math.floor(n / 100);
+// }
+// function denom50(n)
+// {
+//     return Math.floor((n % 100) / 50);
+// }
+// function denom10(n)
+// {
+//     return Math.floor(((n % 100) % 50) / 10);
+// }
+// function change(n)
+// {
+//     return (((n % 100) % 50) % 10);
+// }
+// document.write("<a style=color:blue;font-size:25px;>" + "You will have " + "<a style=color:red;font-size:25px;>" + denom100(amount) + "</a>" + "<a style=color:blue;font-size:25px;>" + " hundred notes, " + "<a style=color:red;font-size:25px;>" + denom50(amount) + "</a>" + "<a style=color:blue;font-size:25px;>" + " fifty notes, "  + "<a style=color:red;font-size:25px;>" + denom10(amount) + "<a style=color:blue;font-size:25px;>" + " ten notes and " + "<a style=color:red;font-size:25px;>" + change(amount) + "<a style=color:blue;font-size:25px;>" + " in change." +"<br>");
+
+// var arr1 = [5, 4, 3, 2, 1, 0];
+// var arr2 = [555, 444, 333, 222, 111];
+// function mirror(arr)
+// {
+//     return arr.reverse();
+// }
+// document.write("<a style=color:blue;font-size:25px;>" + "mirror([" + arr1 + "])</a>"+ " →" + "<a style=color:red;font-size:25px;>" + "[" +mirror(arr1) + "]" + "</a>" + "<br>");
+// document.write("<a style=color:blue;font-size:25px;>" + "mirror([" + arr2 + "])</a>"+ " →" + "<a style=color:red;font-size:25px;>" + "[" +mirror(arr2) + "]" + "</a>" + "<br>");
+
+// var today = new Date();
+// var check = prompt("Wanna check if today is a weekend or not? answer in (yes, no)!");
+// function weekendChk()
+// {
+//     if(today.getDay() == 6 || today.getDay() == 0)
+//     {
+//         alert("Congratulations! Today's a weekend.");
+//     }
+//     else 
+//     {
+//         alert("Sorry! Wait for " + (6 - today.getDay()) + " more days." )
+//     }
+// }
+// var chk = check.toLowerCase();
+// if(chk == "yes")
+// {
+//     weekendChk();
+// }
+
+// var DOB = "April 01, 2000";
+// var millisecondsBetweenDOBAnd1970 = Date.parse(DOB);
+// var millisecondsBetweenNowAnd1970 = Date.now();
+// var ageInMilliseconds = millisecondsBetweenNowAnd1970 - millisecondsBetweenDOBAnd1970;
+// //--We will leverage Date.parse and now method to calculate age in milliseconds refer here https://www.w3schools.com/jsref/jsref_parse.asp
+
+//   var milliseconds = ageInMilliseconds;
+//   var second = 1000;
+//   var minute = second*60;
+//   var hour = minute*60;
+//   var day = hour*24;
+//   var month = day*30; 
+// /*using 30 as base as months can have 28, 29, 30 or 31 days depending a month in a year it itself is a different piece of comuptation*/
+//   var year = day*365;
+
+// //let the age conversion begin
+// var years = Math.round(milliseconds/year);
+// var months = years*12;
+// var days = years*365;
+// var hours = Math.round(milliseconds/hour);
+// var seconds = Math.round(milliseconds/second);
+
+  
+// function printResults(){
+//   message = "Age in Years : "+years+
+//      "</br>Age in Months : "+months+
+//        "</br>Age in Days : "+days+
+//       "</br>Age in Hours : "+hours+
+//       "</br>Age in Seconds : "+seconds+
+//       "</br>Age in Milliseconds : "+milliseconds;
+//       document.write(message);
+// }
+// printResults();
+
+// Age Calc in Years, Months and Days!
+// function getAge(dateString) {
+//     var now = new Date();
+//     var today = new Date(now.getYear(),now.getMonth(),now.getDate());
+  
+//     var yearNow = now.getYear();
+//     var monthNow = now.getMonth();
+//     var dateNow = now.getDate();
+  
+//     var dob = new Date(dateString.substring(6,10),
+//                        dateString.substring(0,2)-1,                   
+//                        dateString.substring(3,5)                  
+//                        );
+  
+//     var yearDob = dob.getYear();
+//     var monthDob = dob.getMonth();
+//     var dateDob = dob.getDate();
+//     var age = {};
+//     var ageString = "";
+//     var yearString = "";
+//     var monthString = "";
+//     var dayString = "";
+  
+  
+//     yearAge = yearNow - yearDob;
+  
+//     if (monthNow >= monthDob)
+//       var monthAge = monthNow - monthDob;
+//     else {
+//       yearAge--;
+//       var monthAge = 12 + monthNow -monthDob;
+//     }
+  
+//     if (dateNow >= dateDob)
+//       var dateAge = dateNow - dateDob;
+//     else {
+//       monthAge--;
+//       var dateAge = 31 + dateNow - dateDob;
+  
+//       if (monthAge < 0) {
+//         monthAge = 11;
+//         yearAge--;
+//       }
+//     }
+  
+//     age = {
+//         years: yearAge,
+//         months: monthAge,
+//         days: dateAge
+//         };
+  
+//     if ( age.years > 1 ) yearString = " years";
+//     else yearString = " year";
+//     if ( age.months> 1 ) monthString = " months";
+//     else monthString = " month";
+//     if ( age.days > 1 ) dayString = " days";
+//     else dayString = " day";
+  
+  
+//     if ( (age.years > 0) && (age.months > 0) && (age.days > 0) )
+//       ageString = age.years + yearString + ", " + age.months + monthString + ", and " + age.days + dayString + " old.";
+//     else if ( (age.years == 0) && (age.months == 0) && (age.days > 0) )
+//       ageString = "Only " + age.days + dayString + " old!";
+//     else if ( (age.years > 0) && (age.months == 0) && (age.days == 0) )
+//       ageString = age.years + yearString + " old. Happy Birthday!!";
+//     else if ( (age.years > 0) && (age.months > 0) && (age.days == 0) )
+//       ageString = age.years + yearString + " and " + age.months + monthString + " old.";
+//     else if ( (age.years == 0) && (age.months > 0) && (age.days > 0) )
+//       ageString = age.months + monthString + " and " + age.days + dayString + " old.";
+//     else if ( (age.years > 0) && (age.months == 0) && (age.days > 0) )
+//       ageString = age.years + yearString + " and " + age.days + dayString + " old.";
+//     else if ( (age.years == 0) && (age.months > 0) && (age.days == 0) )
+//       ageString = age.months + monthString + " old.";
+//     else ageString = "Oops! Could not calculate age!";
+  
+//     return ageString;
+//   }
+  
+  
+//   alert(getAge('04/01/2000'));
+
+// var testDate = new Date();
+// document.write("<a style=color:blue;font-size:25px;>" + "Current Date = </a>" + "<a style=color:red;font-size:25px;>" + testDate + "</a>" + "<br>");
+// var n;
+// function addWeek(n)
+// {
+//     testDate.setDate(testDate.getDate() + (7 * n));
+//     return testDate;
+// }
+// document.write("<a style=color:blue;font-size:25px;>" + "addWeek(4) = " + "</a>"+ "<a style=color:red;font-size:25px;>" + addWeek(4) + "</a>" + "<br>");
+// document.write("<a style=color:blue;font-size:25px;>" + "addWeek(7) = " + "</a>" + "<a style=color:red;font-size:25px;>" + addWeek(7) + "</a>" + "<br>");
+
+// function vowel_count(str1)
+// {
+//   var vowel_list = 'aeiouAEIOU';
+//   var vcount = 0;
+  
+//   for(var x = 0; x < str1.length ; x++)
+//   {
+//     if (vowel_list.indexOf(str1[x]) !== -1)
+//     {
+//       vcount += 1;
+//     }
+  
+//   }
+//   return vcount;
+// }
+// console.log(vowel_count("The quick brown fox jumps over the lazy dog."));
+
+// var char = prompt("Let's check if the character you enter is a vowel or not!");
+// var chr = char.toLowerCase();
+// var rslt;
+// function vCheck(chr)
+// {
+//     switch(chr)
+// {
+//     case "a":
+//         return true;
+//         break;
+//     case "e":
+//         return true;
+//         break;
+//     case "i":
+//         return true;
+//         break;
+//     case "o":
+//         return true;
+//         break;
+//     case "u":
+//         return true;
+//         break;
+//     default:
+//         return false;
+// }
+// }
+// if(vCheck(chr) === true)
+// {
+//     rslt = "Yes"
+// }
+// else
+// {
+//     rslt = "No"
+// }
+// document.write("<a style=color:blue;font-size:25px;>" + "Is '"+ chr + "'" + " a vowel? " + "</a>" + "<a style=color:red;font-size:25px;>" + rslt + "</a>" + "<br>");
+
+// var rndm = Math.random();
+// var num1 = rndm * 100;
+// var num2 = num1 + 1;
+// var numb = Math.floor(num2);
+// var guess;
+// var gs;
+// var i = 0;
+// alert("Time to play a guessing game!");
+// alert("All you have to do is, guess a number between 1 and 100.");
+// alert("Don't Worry! You'll get three chances!");
+// alert("Seems fair?");
+// alert("Alrighty then!");
+
+// function game()
+// {
+//     do
+// {
+//     guess = prompt("Guess the number");
+//     gs = parseInt(guess);
+//     i++;
+//     if(gs === numb)
+//     {
+//         alert("Wow! You guessed right.");
+//     }
+//     else if(i === 3)
+//     {
+//         alert("You Lose!");
+//     }
+//     else
+//     {
+//         alert("Incorrect, Please try again");
+//     }
+// }
+// while(i < 3);
+// }
+// game();
+// alert("That was a fun game, right?");
+// do
+// {
+//     var tryAg = prompt("Wanna play again?(Yes/No)")
+//     var tryAgg = tryAg.toLowerCase();
+//     if(tryAgg === "yes")
+//     {
+//         i = 0;
+//         game();
+//     }
+//     else if(tryAgg === "no")
+//     {
+//         alert("Thank you for playing with use today!");
+//         break;
+//     }
+// }
+// while(i > 3);
+
