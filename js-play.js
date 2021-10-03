@@ -1300,3 +1300,230 @@
 // }
 // while(i > 3);
 
+// var name = "Wajhi";
+// var multiLineString = `My name is ${600 + 60 + 6}
+// My father's name is "Rahat"
+// My age is "20"`;
+// console.log(multiLineString);
+
+//Template Literals
+// var backtick = `Template Literal ${100 + 1}`;
+// console.log(backtick);
+// var backstring = `Line1
+// Line2
+// Line3`;
+// console.log(backstring);
+// var name = "Wajahat";
+// var designation = "Web Developer";
+// var description = `My name is ${name}, I am a ${designation} on Fiverr.`
+// console.log(description);
+
+// var chk = document.querySelector('.dom');
+// chk.classList.add('static');
+// console.dir(chk);
+// chk.textContent = "Biryani";
+
+// var fk = document.querySelectorAll('fk');
+// document.addEventListener('click', function(){
+//     alert("Ahhhhhhhh Yeahhhh");
+// })
+// fk.addEventListener('click', )
+
+// var hit = document.querySelectorAll('.hit');
+// console.dir(hit);
+// function hitMe(){
+//     console.log("Nice Hit");
+// }
+// hit.forEach((result) => {
+//     result.addEventListener('click', hitMe);
+// })
+
+// var n1 = "Wajahat";
+// var n2 = "Wajahat";
+// const p1 = {
+//     age: 20
+// }
+// p1.age = 25;
+// console.log(p1.age);
+// var p2 = {
+//     age: 20
+// }
+// if(p1 == p2){
+//     console.log("Match");
+// }
+
+// var ObjLength = {
+//     name: "Wajahat",
+//     age: 20,
+//     employee: 0
+// }
+// console.log(Object.values(ObjLength));
+
+// var obj2 = {
+    //     age: 23
+    // }
+    // obj1 = obj2;
+    // obj1.age = 25;
+    // var obj3 = { ...obj1, ...obj2 };
+    // var obj4 = Object.freeze( obj1 );
+    // obj3.age = 69;
+    // console.log(obj2);
+// var getValue = prompt('Get an object to pass the key.');
+// var obj1 = {
+//     name: "Wajahat",
+//     age: 20,
+//     designation: "Web Dev"
+// }
+// // var firstName = "age";
+// obj1.firstName = getValue;
+// console.log(obj1);
+
+// var name1 = 'Wajahat';
+// function doStuff(name){
+//     name1 = 'Wajhi';
+//     console.log(name);
+// }
+// doStuff(name1);
+// console.log(name1);
+// var obj = {name: "Khan"};
+// function objCall(name){
+//     obj = 'Sukaina';
+//     console.log(name);
+// }
+// objCall(obj);
+// console.log(obj);
+
+// function outter(){
+//     var outVar = "Outter ------";
+//     function inner(){
+//         var inVar = "Inner ------";
+//         console.log(outVar);
+//         console.log(inVar);
+//     }
+//     return inner;
+// }
+// var getFunc = outter();
+
+// function myScore(){
+//     var score = 1;
+//     return function xyz(){
+//         console.log(score++);
+//     }
+// }
+// var xyz = myScore();
+
+// function Students(nm, ag, adrs) {
+//     this.name = nm
+//     this.age = ag
+//     this.address = adrs
+// }
+// var wajahat = new Students("Wajahat", 20, "BlahBlahBlah");
+
+// function Students(n, ag, adrs){
+// this.name = n;
+// this.age = ag;
+// this.address = adrs;
+// this.func = function() {
+//     console.log("Function is running!!!");
+// }
+// }
+// var wajahat = new Students("Wajahat", 20, 666);
+// console.log(wajahat.func());
+// var sukaina = new Students("Sukaina", 23, 666);
+// console.log(sukaina);
+// var shoaib = new Students("Shoaib", 20, 786);
+// console.log(shoaib);
+
+// class Students {
+//     constructor(name, age, address){
+//         this.name = name;
+//         this.age = age;
+//         this.address = address;
+//     }
+// }
+// var sukaina = new Students("Sukaina", 23, 666);
+// console.log(sukaina);
+// var shoaib = new Students("Shoaib", 20, 786);
+// console.log(shoaib);
+
+// class Parent {
+//     constructor(age){
+//         this.age = age;
+//     }
+// }
+// class Child extends Parent{
+//     constructor(age){
+//         super(age);
+//     }
+// }
+// var _child = new Child(15);
+// console.log(_child);
+
+// var one =document.querySelector('.one');
+// var two =document.querySelector('.two');
+// one.addEventListener('click', callThis);
+// two.addEventListener('click', callThis);
+// function callThis(){
+//     console.log('Inside', this)
+//     setTimeout(() => {
+//         this.innerText = "MAGIC";
+//     }, 2000);
+// }
+// console.log('Outside', this);
+
+// function User(){
+//     this.age = 20;
+// }
+// User.prototype.name = "Wajahat";
+// var user1 = new User();
+// var user2 = new User();
+// console.log(user1);
+// console.log(user2);
+
+// function Call(){
+
+// }
+// Call.prototype.addition = function(a,b) {
+//     return a + b;
+// }
+// Call.prototype.subtraction = function(a,b) {
+//     return a - b;
+// }
+// var calc = new Call();
+
+// function Company() {
+//     this.companyName = "Trafficer";
+// }
+// Company.prototype.country = 'Pakistan';
+// Company.prototype.city = 'Karachi';
+// function User() {
+//     Company.call(this);
+//     this.userName = "Wajahat";
+// }
+// User.prototype = Object.create(Company.prototype);
+// User.constructor = User;
+// var company = new Company();
+// var user = new User();
+// console.log(company);
+// console.log(user);
+
+// console.log('Starting...');
+// setTimeout(() => {
+//     console.log('Running...');
+// }, 3000);
+// console.log('Ending...');
+
+// console.log('Running code...');
+// document.addEventListener("DOMContentLoaded", () => {
+//     console.log('DOMContentLoaded');
+// })
+// console.log('Running End');
+
+// console.log(1);
+// fetch('https://regres.in/api/users')
+//     .then( 
+//         (response) => {
+//             console.log(response) 
+//         })
+// console.log(2);
+
